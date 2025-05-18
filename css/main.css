@@ -5366,7 +5366,6 @@ input:-webkit-autofill {
   width: 100%;
   max-height: 100vh;
 }
-
 .video-controls-container {
   position: absolute;
   bottom: 0;
@@ -5376,6 +5375,17 @@ input:-webkit-autofill {
   opacity: 0;
   -webkit-transition: opacity 150ms ease-in-out;
   transition: opacity 150ms ease-in-out;
+}
+@media (max-width: 62em) {
+  .video-controls-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
 }
 
 .video-controls-container::before {
@@ -5414,11 +5424,6 @@ input:-webkit-autofill {
     padding: 0.625rem 0.625rem;
   }
 }
-@media (max-width: 40em) {
-  .video-controls-container .controls {
-    padding: 0.4375rem 0.4375rem;
-  }
-}
 .video-controls-container .controls__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5433,12 +5438,6 @@ input:-webkit-autofill {
     gap: 0.625rem;
   }
 }
-@media (max-width: 40em) {
-  .video-controls-container .controls__block {
-    gap: 0.5rem;
-  }
-}
-
 .video-controls-container .controls button {
   height: 1.5rem;
   width: 1.5rem;
@@ -5459,10 +5458,25 @@ input:-webkit-autofill {
     width: 1.375rem;
   }
 }
-@media (max-width: 40em) {
-  .video-controls-container .controls button {
-    height: 1.25rem;
-    width: 1.25rem;
+.play-mob {
+  display: none;
+}
+@media (max-width: 62em) {
+  .play-mob {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 3.125rem;
+    height: 3.125rem;
+    display: block;
+  }
+  .play-mob svg {
+    width: 3.125rem;
+    height: 3.125rem;
+    fill: var(--white);
   }
 }
 
@@ -5476,10 +5490,9 @@ input:-webkit-autofill {
     height: 1.125rem;
   }
 }
-@media (max-width: 40em) {
-  .video-controls-container .controls .full-screen-btn {
-    width: 0.9375rem;
-    height: 0.9375rem;
+@media (max-width: 62em) {
+  .video-controls-container .controls .play-pause-btn {
+    display: none;
   }
 }
 
@@ -5529,6 +5542,11 @@ input:-webkit-autofill {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media (max-width: 62em) {
+  .volume-container {
+    display: none;
+  }
 }
 
 .volume-slider {
@@ -5616,6 +5634,11 @@ input:-webkit-autofill {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+@media (max-width: 62em) {
+  .timeline-container {
+    padding-bottom: 0.625rem;
+  }
 }
 
 .timeline {
