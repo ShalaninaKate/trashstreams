@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+        <header class="header">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__actions">
+          <button class="header__button" type="button">Sign Up</button>
+          <button class="header__button button" type="button">Login</button>
+        </div>
+      </header>
+
+  <sidebar class="side">
+  <aside class="sidebar simplebar">
+
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            <p class="nav__link-text">Main Page</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#nav"></use>
+            </svg>
+            <p class="nav__link-text">Navigation</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <p class="nav__link-text">Following</p>
+          </a>
+        </li>
+      </ul>
+      <button class="sidebar__btn-start button" type="button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#start-stream"></use>
+        </svg>
+        <span class="button__text">Start Stream</span>
+      </button>
+    </nav>
+    <div class="sidebar__recommend recommend ">
+      <h3 class="recommend__title">TOP Streams</h3>
+      <ul class="recommend__list">
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="recommend__bottom">
+        <button class="recommend__button" type="button">show more</button>
+      </div>
+    </div>
+  </aside>
+</sidebar>
+
+
+  <main class="main">
+    <div class="main__container">
+      <div class="stream-sections">
+        <section class="stream-section">
+          <a href="#" class="stream-section__link">
+            <h2 class="stream-section__title"><span>Live channels</span> we think you'll like</h2>
+          </a>
+          <div class="stream-section__list">
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/01.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/01.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">KICK ME 100 TIMES!!! </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/02.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/02.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/02.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Vestibulum varius quam velit </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/03.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/03.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/03.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Pellentesque risus eu ut consequat</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge
+                    </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Ukrainian</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/04.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/04.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/04.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Nunc in ornare felis et sit</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/05.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/05.png" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Eu tortor et bibendum aliquam sfsdfsdftert</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+        <section class="stream-section">
+          <a href="#" class="stream-section__link">
+            <h2 class="stream-section__title">Recommended <span>Fire Hand Challenge</span> channels</h2>
+          </a>
+          <div class="stream-section__list">
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/01.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/01.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">KICK ME 100 TIMES!!! </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/02.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/02.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/02.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Vestibulum varius quam velit </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/03.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/03.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/03.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Pellentesque risus eu ut consequat</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge
+                    </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Ukrainian</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/04.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/04.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/04.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Nunc in ornare felis et sit</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/05.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/05.png" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Eu tortor et bibendum aliquam sfsdfsdftert</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+        <section class="stream-section">
+          <a href="#" class="stream-section__link">
+            <h2 class="stream-section__title">Just Chatting & IRL Streams</h2>
+          </a>
+          <div class="stream-section__list">
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/01.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/01.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">KICK ME 100 TIMES!!! </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/02.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/02.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/02.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Vestibulum varius quam velit </h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/03.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/03.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/03.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Pellentesque risus eu ut consequat</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge
+                    </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Ukrainian</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/04.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/04.jpg" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/04.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Nunc in ornare felis et sit</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge </p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">English</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="#" class="stream-section__item">
+              <article class="stream-card stream-card--live">
+                <div class="stream-card__thumbnail">
+                  <div class="stream-card__preview">
+                    <picture>
+                      <source srcset="./img/preview/05.webp" type="image/webp">
+                      <img loading="lazy" src="./img/preview/05.png" width="" height="" alt="Stream preview">
+                    </picture>
+                  </div>
+                  <span class="stream-card__live-label">LIVE</span>
+                  <span class="stream-card__viewers">3.8k viewers</span>
+                </div>
+                <div class="stream-card__info">
+                  <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                  <div class="stream-card__info-descr">
+                    <h3 class="stream-card__title">Eu tortor et bibendum aliquam sfsdfsdftert</h3>
+                    <p class="stream-card__subtitle">100 kicks challenge</p>
+                    <p class="stream-card__author">potatopixel</p>
+                    <div class="tags">
+                      <span class="tags__item">Spanish</span>
+                      <span class="tags__item">Challenges</span>
+                      <span class="tags__item">Just Chatting</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

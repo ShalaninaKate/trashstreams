@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Settings</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+        <header class="header">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__actions ">
+          <button class="header__btn-start button" type="button">
+            <svg class="button__icon">
+              <use xlink:href="img/sprite.svg#start-stream"></use>
+            </svg>
+            <span class="button__text">Start Stream</span>
+          </button>
+          <a href="#" class="header__messages messages">
+            <svg class="messages__icon">
+              <use xlink:href="img/sprite.svg#mes"></use>
+            </svg>
+            <!-- <span class="messages__count">1</span> -->
+          </a>
+          <a href="#" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+            <!-- <span class="notification__count">1</span> -->
+          </a>
+          <div class="header__tokens tokens">
+            <svg class="tokens__icon">
+              <use xlink:href="img/sprite.svg#coins"></use>
+            </svg>
+            <span class="tokens__count">500</span>
+          </div>
+          <div class="header__profile profile dropdown-item">
+            <button class="profile__btn dropdown-btn" type="button">
+              <img class="profile__ava" src="./img/ava.svg" alt="ava">
+            </button>
+            <div class="profile__dropdown dropdown-account dropdown">
+              <div class="dropdown-account__header">
+                <img class="dropdown-account__ava" src="./img/ava.svg" alt="ava">
+                <span class="dropdown-account__name">johnjohnson</span>
+              </div>
+              <ul class="dropdown-account__items">
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/channel.svg" alt="">
+                    <span class="dropdown-account__text">Channel</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/dashboard.svg" alt="">
+                    <span class="dropdown-account__text">Creator Dashboard</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/star.svg" alt="">
+                    <span class="dropdown-account__text">Subscribtions </span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/settings.svg" alt="">
+                    <span class="dropdown-account__text">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+              <a href="#" class="dropdown-account__link">
+                <img class="dropdown-account__icon" src="./img/svg/out.svg" alt="">
+                <span class="dropdown-account__text">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <sidebar class="side">
+  <aside class="sidebar simplebar">
+
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            <p class="nav__link-text">Main Page</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#nav"></use>
+            </svg>
+            <p class="nav__link-text">Navigation</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <p class="nav__link-text">Following</p>
+          </a>
+        </li>
+      </ul>
+      <button class="sidebar__btn-start button" type="button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#start-stream"></use>
+        </svg>
+        <span class="button__text">Start Stream</span>
+      </button>
+    </nav>
+    <div class="sidebar__recommend recommend ">
+      <h3 class="recommend__title">TOP Streams</h3>
+      <ul class="recommend__list">
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="recommend__bottom">
+        <button class="recommend__button" type="button">show more</button>
+      </div>
+    </div>
+  </aside>
+</sidebar>
+
+
+
+  <main class="main">
+    <div class="main__container">
+      <div class="settings">
+        <h1 class="settings__title">Settings</h1>
+        <div class="tabs" data-tabs="tab">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Profile</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">URL and broadcast key</button>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Security</button>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Notif<span>ications</span></button>
+            </li>
+          </ul>
+          <div class="tabs__content">
+
+            <!-- Profile -->
+            <div class="tabs__panel">
+              <div class="settings__body">
+                <h2 class="settings__subtitle">Profile</h2>
+                <div class="settings__items">
+                  <!-- Profile Preview -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Profile Preview</h3>
+                    </div>
+                    <div class="item-settings__body profile-prev">
+                      <div class="profile-prev__user">
+                        <div class="profile-prev__avatar">
+                          <img src="./img/ava.svg" alt="ava">
+                        </div>
+                        <button class="profile-prev__btn button button--file file__button">Edit Avatar</button>
+                      </div>
+                      <div class="profile-prev__descr">
+                        <div class="profile-prev__row">
+                          <p class="profile-prev__info">Information about the user JohnJohnson</p>
+                          <p class="profile-prev__text">johnjohnson trashstream’s Channel</p>
+                        </div>
+                        <div class="profile-prev__followers">
+                          <span class="profile-prev__followers-text">Followers: </span>
+                          <span class="profile-prev__followers-count">1 598</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Channel banner -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Channel banner</h3>
+                    </div>
+                    <div class="item-settings__body banner ">
+                      <div class="banner__img ">
+                        <picture>
+                          <source srcset="./img/banner/03.webp" type="image/webp">
+                          <img loading="lazy" src="./img/banner/03.png" width="" height="" alt="banner">
+                        </picture>
+                      </div>
+                      <p class="banner__info">Minimum image aspect ratio is 1200x134px pixels, size is
+                        less than 4MB.
+                      </p>
+                      <button class="banner__btn button button--file">Edit Banner</button>
+                    </div>
+                  </div>
+
+                  <!-- Offline stream banner -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Offline stream banner</h3>
+                    </div>
+                    <div class="item-settings__body banner ">
+                      <div class="banner__img banner__img--offline">
+                        <picture>
+                          <source srcset="./img/banner/offline.webp" type="image/webp">
+                          <img loading="lazy" src="./img/banner/offline.png" width="" height="" alt="banner">
+                        </picture>
+                      </div>
+                      <p class="banner__info">This banner will be displayed for two minutes after the end of the
+                        broadcast. Its resolution must be 1080p (aspect ratio 16:9), format - JPEG or PNG, size - less
+                        than 4MB.
+                      </p>
+                      <button class="banner__btn button button--file">Edit Banner</button>
+                    </div>
+                  </div>
+
+                  <!-- Basic information -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Basic information</h3>
+                    </div>
+                    <form class="item-settings__body form ">
+                      <div class="form__items">
+                        <div class="form__item">
+                          <label class="form__label">Username</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" value="john_johnson">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">Enter your email address</label>
+                          <div class="input">
+                            <input class="input__control" type="email" name="" value="john_johnson@gmail.com">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">Bio</label>
+                          <div class="input">
+                            <textarea class="input__control input__control--textarea"
+                              placeholder="Enter text"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__actions">
+                        <button type="button" class="form__button button button--transparent">Clear</button>
+                        <button type="button" class="form__button button">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Social media -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Social media</h3>
+                    </div>
+                    <form class="item-settings__body form ">
+                      <div class="form__items">
+                        <div class="form__item">
+                          <label class="form__label">Instagram</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">Twitter</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">Facebook</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">YouTube</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">Discord</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <label class="form__label">TikTok</label>
+                          <div class="input">
+                            <input class="input__control" type="text" name="" placeholder="Enter usernamer" value="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__actions">
+                        <button type="button" class="form__button button button--transparent">Clear</button>
+                        <button type="button" class="form__button button">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- URL and broadcast key -->
+            <div class="tabs__panel">
+              <div class="settings__body">
+                <h2 class="settings__subtitle">URL and broadcast key</h2>
+                <div class="settings__items">
+
+                  <!-- URL of the broadcast -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">URL of the broadcast</h3>
+                    </div>
+                    <div class="item-settings__body form ">
+                      <div class="form__items">
+                        <div class="form__item">
+                          <div class="input">
+                            <input class="input__control" type="password" name="" value="john_johnson">
+                            <button type="button" class="input__btn show-pass">
+                              <svg class="input__btn-eye on">
+                                <use xlink:href="img/sprite.svg#eye"></use>
+                              </svg>
+                              <svg class="input__btn-eye off ">
+                                <use xlink:href="img/sprite.svg#eye-off"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Broadcast key -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Broadcast key</h3>
+                    </div>
+                    <div class="item-settings__body form ">
+                      <div class="form__items">
+                        <div class="form__item">
+                          <div class="input">
+                            <input class="input__control" type="password" name="" value="john_johnson">
+                            <button type="button" class="input__btn show-pass">
+                              <svg class="input__btn-eye on">
+                                <use xlink:href="img/sprite.svg#eye"></use>
+                              </svg>
+                              <svg class="input__btn-eye off ">
+                                <use xlink:href="img/sprite.svg#eye-off"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form__actions">
+                        <button type="button" class="form__button button button--transparent">Reset</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Security -->
+            <div class="tabs__panel">
+              <div class="settings__body">
+                <h2 class="settings__subtitle">Security</h2>
+                <div class="settings__items">
+
+                  <!-- Password -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Password</h3>
+                    </div>
+                    <form class="item-settings__body form ">
+                      <div class="form__items">
+                        <div class="form__item">
+                          <div class="form__label">Current Password</div>
+                          <div class="input">
+                            <input class="input__control" type="password" name="" value="john_johnson">
+                            <button type="button" class="input__btn show-pass">
+                              <svg class="input__btn-eye on">
+                                <use xlink:href="img/sprite.svg#eye"></use>
+                              </svg>
+                              <svg class="input__btn-eye off ">
+                                <use xlink:href="img/sprite.svg#eye-off"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <div class="form__label">New Password</div>
+                          <div class="input">
+                            <input class="input__control" type="password" name="" value="john_johnson">
+                            <button type="button" class="input__btn show-pass">
+                              <svg class="input__btn-eye on">
+                                <use xlink:href="img/sprite.svg#eye"></use>
+                              </svg>
+                              <svg class="input__btn-eye off ">
+                                <use xlink:href="img/sprite.svg#eye-off"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="form__item">
+                          <div class="form__label">Repeat New Password</div>
+                          <div class="input">
+                            <input class="input__control" type="password" name="" value="john_johnson">
+                            <button type="button" class="input__btn show-pass">
+                              <svg class="input__btn-eye on">
+                                <use xlink:href="img/sprite.svg#eye"></use>
+                              </svg>
+                              <svg class="input__btn-eye off ">
+                                <use xlink:href="img/sprite.svg#eye-off"></use>
+                              </svg>
+                            </button>
+                          </div>
+                          <p class="form__text-bottom">Password must be between 8 and 32 characters long and include at
+                            least one lowercase letter, one uppercase letter, and one special character.</p>
+                        </div>
+                      </div>
+                      <div class="form__actions">
+                        <button type="button" class="form__button button button--transparent">Clear</button>
+                        <button type="button" class="form__button button">Save</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Two-factor authentication -->
+                  <div class="settings__item item-settings">
+                    <div class="item-settings__header">
+                      <h3 class="item-settings__title">Two-factor authentication</h3>
+                    </div>
+                    <div class="item-settings__body two-fa">
+                      <p class="two-fa__text">By setting up two-factor authentication, you increase the security of your
+                        account.</p>
+                      <button class="two-fa__btn button" type="button">Enable 2FA</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Notifications -->
+            <div class="tabs__panel">
+              <div class="settings__body">
+                <h2 class="settings__subtitle">Notifications</h2>
+                <div class="settings__item item-settings notif">
+                  <div class="item-settings__header">
+                    <div class="notif__item">
+                      <div class="notif__text">
+                        <h3 class="notif__title">On air</h3>
+                        <p class="notif__descr">Notify me when a channel goes on air</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-settings__body form">
+                    <ul class="notif__list">
+                      <li class="notif__item">
+                        <div class="notif__text">
+                          <h4 class="notif__title">By website</h4>
+                          <p class="notif__descr">Allow notifications on the active TrashStreams tab (please note that
+                            if you switch to another tab, you will not receive a notification).</p>
+                        </div>
+                        <div class="notif__button switch-btn"></div>
+                      </li>
+                      <li class="notif__item">
+                        <div class="notif__text">
+                          <h4 class="notif__title">By email</h4>
+                          <p class="notif__descr">Receive email notifications
+                          </p>
+                        </div>
+                        <div class="notif__button switch-btn"></div>
+                      </li>
+                      <li class="notif__item">
+                        <div class="notif__text">
+                          <h4 class="notif__title">By push notification in mobile app</h4>
+                          <p class="notif__descr">Receive notifications via the TrashStreams mobile app</p>
+                        </div>
+                        <div class="notif__button switch-btn"></div>
+                      </li>
+                    </ul>
+                    <div class="form__actions">
+                      <button type="button" class="form__button button button--transparent">Clear</button>
+                      <button type="button" class="form__button button">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+</body>
+
+</html>

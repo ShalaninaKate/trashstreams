@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Stream</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+        <header class="header">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__actions ">
+          <button class="header__btn-start button" type="button">
+            <svg class="button__icon">
+              <use xlink:href="img/sprite.svg#start-stream"></use>
+            </svg>
+            <span class="button__text">Start Stream</span>
+          </button>
+          <a href="#" class="header__messages messages">
+            <svg class="messages__icon">
+              <use xlink:href="img/sprite.svg#mes"></use>
+            </svg>
+            <!-- <span class="messages__count">1</span> -->
+          </a>
+          <a href="#" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+            <!-- <span class="notification__count">1</span> -->
+          </a>
+          <div class="header__tokens tokens">
+            <svg class="tokens__icon">
+              <use xlink:href="img/sprite.svg#coins"></use>
+            </svg>
+            <span class="tokens__count">500</span>
+          </div>
+          <div class="header__profile profile dropdown-item">
+            <button class="profile__btn dropdown-btn" type="button">
+              <img class="profile__ava" src="./img/ava.svg" alt="ava">
+            </button>
+            <div class="profile__dropdown dropdown-account dropdown">
+              <div class="dropdown-account__header">
+                <img class="dropdown-account__ava" src="./img/ava.svg" alt="ava">
+                <span class="dropdown-account__name">johnjohnson</span>
+              </div>
+              <ul class="dropdown-account__items">
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/channel.svg" alt="">
+                    <span class="dropdown-account__text">Channel</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/dashboard.svg" alt="">
+                    <span class="dropdown-account__text">Creator Dashboard</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/star.svg" alt="">
+                    <span class="dropdown-account__text">Subscribtions </span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/settings.svg" alt="">
+                    <span class="dropdown-account__text">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+              <a href="#" class="dropdown-account__link">
+                <img class="dropdown-account__icon" src="./img/svg/out.svg" alt="">
+                <span class="dropdown-account__text">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <sidebar class="side">
+  <aside class="sidebar simplebar">
+
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            <p class="nav__link-text">Main Page</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#nav"></use>
+            </svg>
+            <p class="nav__link-text">Navigation</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <p class="nav__link-text">Following</p>
+          </a>
+        </li>
+      </ul>
+      <button class="sidebar__btn-start button" type="button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#start-stream"></use>
+        </svg>
+        <span class="button__text">Start Stream</span>
+      </button>
+    </nav>
+    <div class="sidebar__recommend recommend ">
+      <h3 class="recommend__title">TOP Streams</h3>
+      <ul class="recommend__list">
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="recommend__bottom">
+        <button class="recommend__button" type="button">show more</button>
+      </div>
+    </div>
+  </aside>
+</sidebar>
+
+  <main class="main">
+    <div class="main__body js-main">
+      <div class="user-stream">
+        <div class="user-stream__header">
+          <div class="user-stream__preview">
+            <div class="user-stream__preview-placeholder">Connect streaming software to start preview</div>
+          </div>
+          <div class="user-stream__info stream-info">
+
+            <div class="stream-info__descr">
+              <div class="stream-info__items">
+                <div class="stream-info__item">
+                  <span class="stream-info__label">Title</span>
+                  <span class="stream-info__value">Test Stream</span>
+                </div>
+                <div class="stream-info__item">
+                  <span class="stream-info__label">Category</span>
+                  <span class="stream-info__value">Challenges</span>
+                </div>
+                <div class="stream-info__row">
+                  <div class="stream-info__item">
+                    <span class="stream-info__label">Viewers waiting</span>
+                    <span class="stream-info__value">150</span>
+                  </div>
+                  <div class="stream-info__item">
+                    <span class="stream-info__label">Followers</span>
+                    <span class="stream-info__value">5</span>
+                  </div>
+                </div>
+              </div>
+              <button class="stream-info__edit button button--file">Edit </button>
+            </div>
+            <div class="stream-info__actions">
+              <button class="stream-info__btn button" type="button">Start Stream</button>
+              <button class="stream-info__btn button button--transparent" type="button">Stop</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="user-stream__tabs tabs" data-tabs="tab">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Stream Setting</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Lots</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Analytics</button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Donate History</button></li>
+          </ul>
+          <div class="tabs__content">
+            <!-- Stream Setting -->
+            <div class="tabs__panel">
+              <form class="stream-settings form ">
+                <div class="form__items">
+
+                  <div class="form__item">
+                    <label class="form__label">Stream Key</label>
+                    <div class="stream-settings__row form__row">
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="password" name=""
+                            value="http://asagadfgadfg.trashsrteam.com">
+                          <button type="button" class="input__btn show-pass">
+                            <svg class="input__btn-eye on">
+                              <use xlink:href="img/sprite.svg#eye"></use>
+                            </svg>
+                            <svg class="input__btn-eye off ">
+                              <use xlink:href="img/sprite.svg#eye-off"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="stream-settings__actions">
+                        <button class="form__button button button--transparent">Copy</button>
+                        <button class="form__button button button--transparent">Reset</button>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label">Stream URL</label>
+                    <div class="stream-settings__row form__row">
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="password" name=""
+                            value="http://asagadfgadfg.trashsrteam.com">
+                          <button type="button" class="input__btn show-pass">
+                            <svg class="input__btn-eye on">
+                              <use xlink:href="img/sprite.svg#eye"></use>
+                            </svg>
+                            <svg class="input__btn-eye off ">
+                              <use xlink:href="img/sprite.svg#eye-off"></use>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="stream-settings__actions">
+                        <button class="form__button button button--transparent">Copy</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Lots -->
+            <div class="tabs__panel">
+              <form class="lots form ">
+                <div class="form__items">
+                  <div class="form__item">
+                    <label class="form__label">First Lot</label>
+                    <div class="lots__row form__row">
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="text" name="" value="" placeholder="Enter name of lot">
+                        </div>
+                      </div>
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="text" name="" value="" placeholder="Price of lot">
+                          <span class="input__text">TKZ</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__item">
+                    <label class="form__label">Fourth Lot</label>
+                    <div class="lots__row form__row">
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="text" name="" value="" placeholder="Enter name of lot">
+                        </div>
+                      </div>
+                      <div class="form__item">
+                        <div class="input">
+                          <input class="input__control" type="text" name="" value="" placeholder="Price of lot">
+                          <span class="input__text">TKZ</span>
+                        </div>
+                      </div>
+                      <button class="lots__button button button--transparent">+</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="lots__button button" type="button">Save</button>
+              </form>
+            </div>
+            <!-- Analytics -->
+            <div class="tabs__panel">
+              <div class="analytics">
+                <ul class="analytics__list">
+                  <li class="analytics__item">
+                    <div class="analytics__title">Session</div>
+                    <div class="analytics__value">ONLINE</div>
+                  </li>
+                  <li class="analytics__item">
+                    <div class="analytics__title">Viewers</div>
+                    <div class="analytics__value">54 698</div>
+                  </li>
+                  <li class="analytics__item">
+                    <div class="analytics__title">Followers</div>
+                    <div class="analytics__value">1 697</div>
+                  </li>
+                  <li class="analytics__item">
+                    <div class="analytics__title">Subscribtions</div>
+                    <div class="analytics__value">692</div>
+                  </li>
+                  <li class="analytics__item">
+                    <div class="analytics__title">
+                      Online Time</div>
+                    <div class="analytics__value">
+                      08:42:13</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Donate History -->
+            <div class="tabs__panel">
+              <div class="donate__table table">
+                <div class="table__filters">
+                  <div class="filters">
+                    <div class="filters__tabs">
+                      <button class="filters__tab active" type="button">Lots Bought</span>
+                      </button>
+                      <button class="filters__tab" type="button">Donation</span>
+                      </button>
+                      <button class="filters__tab" type="button">Subscribtions
+                      </button>
+                    </div>
+                  </div>
+                  <div class="filters">
+                    <span class="filters__title">Sort by</span>
+                    <div class="filters__items">
+                      <div class="filters__item dropdown-item">
+                        <button class="filters__btn dropdown-btn" type="button">
+                          <span class="filters__text">Newest</span>
+                          <svg class="filters__arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="table__body">
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items table__items--title">
+                      <li class="table__item">Username</li>
+                      <li class="table__item">Donate Amount</li>
+                      <li class="table__item">Time</li>
+                      <li class="table__item table__item--mess">Message</li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items ">
+                      <li class="table__item">
+                        <div class="table__user">
+                          <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                          <div class="table__user-name">
+                            <span class="table__user-nickname">Pellentesque</span>
+                            <span class="table__user-username">@Pellentesque</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="table__item">50 TKZ</li>
+                      <li class="table__item">25.05.2025 16:10</li>
+                      <li class="table__item table__item--mess">
+                        <span class="table__item-label">Message</span>
+                        Malesuada lorem diam mauris at nunc viverra molestie neque. Non eu arcu purus venenatis eu
+                        condimentum duis. In vulputate pharetra enim turpis diam.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items ">
+                      <li class="table__item">
+                        <div class="table__user">
+                          <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                          <div class="table__user-name">
+                            <span class="table__user-nickname">Pellentesque</span>
+                            <span class="table__user-username">@Pellentesque</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="table__item">50 TKZ</li>
+                      <li class="table__item">25.05.2025 16:10</li>
+                      <li class="table__item table__item--mess">
+                        <span class="table__item-label">Message</span>
+                        Malesuada lorem diam mauris at nunc viverra molestie neque. Non eu arcu purus venenatis eu
+                        condimentum duis. In vulputate pharetra enim turpis diam.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items ">
+                      <li class="table__item">
+                        <div class="table__user">
+                          <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                          <div class="table__user-name">
+                            <span class="table__user-nickname">Pellentesque</span>
+                            <span class="table__user-username">@Pellentesque</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="table__item">50 TKZ</li>
+                      <li class="table__item">25.05.2025 16:10</li>
+                      <li class="table__item table__item--mess">
+                        <span class="table__item-label">Message</span>
+                        Malesuada lorem diam mauris at nunc viverra molestie neque. Non eu arcu purus
+                        venenatis eu
+                        condimentum duis. In vulputate pharetra enim turpis diam.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items ">
+                      <li class="table__item">
+                        <div class="table__user">
+                          <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                          <div class="table__user-name">
+                            <span class="table__user-nickname">Pellentesque</span>
+                            <span class="table__user-username">@Pellentesque</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="table__item">50 TKZ</li>
+                      <li class="table__item">25.05.2025 16:10</li>
+                      <li class="table__item table__item--mess">
+                        <span class="table__item-label">Message</span>
+                        Malesuada lorem diam mauris at nunc viverra molestie neque. Non eu arcu purus
+                        venenatis eu
+                        condimentum duis. In vulputate pharetra enim turpis diam.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="table__row">
+                    <ul class="donate__table-items table__items ">
+                      <li class="table__item">
+                        <div class="table__user">
+                          <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                          <div class="table__user-name">
+                            <span class="table__user-nickname">Pellentesque</span>
+                            <span class="table__user-username">@Pellentesque</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="table__item">50 TKZ</li>
+                      <li class="table__item">25.05.2025 16:10
+                      </li>
+                      <li class="table__item table__item--mess">
+                        <span class="table__item-label">Message</span>
+                        Malesuada lorem diam mauris at nunc
+                        viverra molestie neque. Non eu arcu purus
+                        venenatis eu
+                        condimentum duis. In vulputate pharetra
+                        enim turpis diam.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              <div class="pagination">
+                <a href="#" class="pagination__item active">1</a>
+                <a href="#" class="pagination__item">2</a>
+                <a href="#" class="pagination__item">3</a>
+                <span href="#" class="dots">...</span>
+                <a href="#" class="pagination__item">12</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="main__chat js-side ">
+              <div class="chat ">
+          <div class="chat__header">
+            <button class="chat__burger js-side-toggle">
+              <img class="chat__burger-icon" src="./img/svg/burger.svg" alt="burger">
+              <span class="chat__burger-text">Chat</span>
+            </button>
+            <h3 class="chat__title">Chat</h3>
+          </div>
+          <div class="chat__body ">
+            <ul class="chat__list simplebar">
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet tortor tristique lacus rhoncus felis sed. Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell <span>:</span></span><span
+                  class="chat__item-text">tristique lacus rhoncus felis sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet tortor tristique lacus rhoncus felis sed.
+                  Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell <span>:</span></span><span
+                  class="chat__item-text">tristique lacus rhoncus felis sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet tortor tristique lacus rhoncus felis
+                  sed. Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author red">KickMemes <span>:</span></span><span
+                  class="chat__item-text">Convallis quis morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author red">KickMemes <span>:</span></span><span
+                  class="chat__item-text">bi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell
+                  <span>:</span></span><span class="chat__item-text">tristique lacus
+                  rhoncus felis sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet tortor
+                  tristique lacus rhoncus felis sed. Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell
+                  <span>:</span></span><span class="chat__item-text">tristique lacus rhoncus felis
+                  sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet
+                  tortor tristique lacus rhoncus felis sed.
+                  Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell
+                  <span>:</span></span><span class="chat__item-text">tristique lacus
+                  rhoncus felis sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper
+                  aliquet tortor tristique lacus
+                  rhoncus felis sed. Convallis
+                  quis
+                  morbi elementum cursus
+                  donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell
+                  <span>:</span></span><span class="chat__item-text">tristique
+                  lacus rhoncus felis sed</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author green">SAMOGON123<span>:</span></span><span
+                  class="chat__item-text">Ullamcorper aliquet tortor tristique lacus rhoncus felis sed.
+                  Convallis quis
+                  morbi elementum cursus donec</span>
+              </li>
+              <li class="chat__item">
+                <span class="chat__item-author yellow">Crazy_squirrell <span>:</span></span><span
+                  class="chat__item-text">tristique lacus rhoncus felis sed</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="chat__messages">
+            <div class="chat__emoji">
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/01.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/02.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/03.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/04.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/05.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/06.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/07.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/08.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/09.png" alt="">
+              </button>
+              <button class="chat__emoji-item" type="button">
+                <img class="chat__emoji-icon" src="./img/emoji/10.png" alt="">
+              </button>
+            </div>
+            <textarea class="chat__input" placeholder="Send message"></textarea>
+            <div class="chat__input-actions">
+              <button type="submit" class="chat__input-button button">Send</button>
+            </div>
+          </form>
+
+        </div>
+
+    </div>
+  </main>
+
+</body>
+
+</html>

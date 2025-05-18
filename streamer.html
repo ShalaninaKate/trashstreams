@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Streamer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+        <header class="header">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__actions ">
+          <button class="header__btn-start button" type="button">
+            <svg class="button__icon">
+              <use xlink:href="img/sprite.svg#start-stream"></use>
+            </svg>
+            <span class="button__text">Start Stream</span>
+          </button>
+          <a href="#" class="header__messages messages">
+            <svg class="messages__icon">
+              <use xlink:href="img/sprite.svg#mes"></use>
+            </svg>
+            <!-- <span class="messages__count">1</span> -->
+          </a>
+          <a href="#" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+            <!-- <span class="notification__count">1</span> -->
+          </a>
+          <div class="header__tokens tokens">
+            <svg class="tokens__icon">
+              <use xlink:href="img/sprite.svg#coins"></use>
+            </svg>
+            <span class="tokens__count">500</span>
+          </div>
+          <div class="header__profile profile dropdown-item">
+            <button class="profile__btn dropdown-btn" type="button">
+              <img class="profile__ava" src="./img/ava.svg" alt="ava">
+            </button>
+            <div class="profile__dropdown dropdown-account dropdown">
+              <div class="dropdown-account__header">
+                <img class="dropdown-account__ava" src="./img/ava.svg" alt="ava">
+                <span class="dropdown-account__name">johnjohnson</span>
+              </div>
+              <ul class="dropdown-account__items">
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/channel.svg" alt="">
+                    <span class="dropdown-account__text">Channel</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/dashboard.svg" alt="">
+                    <span class="dropdown-account__text">Creator Dashboard</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/star.svg" alt="">
+                    <span class="dropdown-account__text">Subscribtions </span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/settings.svg" alt="">
+                    <span class="dropdown-account__text">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+              <a href="#" class="dropdown-account__link">
+                <img class="dropdown-account__icon" src="./img/svg/out.svg" alt="">
+                <span class="dropdown-account__text">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <sidebar class="side">
+  <aside class="sidebar simplebar">
+
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            <p class="nav__link-text">Main Page</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#nav"></use>
+            </svg>
+            <p class="nav__link-text">Navigation</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <p class="nav__link-text">Following</p>
+          </a>
+        </li>
+      </ul>
+      <button class="sidebar__btn-start button" type="button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#start-stream"></use>
+        </svg>
+        <span class="button__text">Start Stream</span>
+      </button>
+    </nav>
+    <div class="sidebar__recommend recommend ">
+      <h3 class="recommend__title">TOP Streams</h3>
+      <ul class="recommend__list">
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="recommend__bottom">
+        <button class="recommend__button" type="button">show more</button>
+      </div>
+    </div>
+  </aside>
+</sidebar>
+
+  <main class="main">
+    <div class="main__container">
+      <div class="channel">
+        <div class="channel__header">
+          <div class="channel__banner">
+            <div class="channel__picture">
+              <picture>
+                <source srcset="./img/banner/01.webp" type="image/webp">
+                <img class="channel__img" loading="lazy" src="./img/banner/01.png" width="" height="" alt="">
+              </picture>
+            </div>
+            <div class="channel__status">
+              <div class="channel__status-btn">OFFLINE</div>
+              <div class="channel__status-text">potatapixel <span>offline</span></div>
+            </div>
+          </div>
+          <div class="channel__info">
+            <div class="stream-descr stream-descr--channel">
+              <img class="stream-descr__image" src="./img/streams/05.png" alt="">
+              <div class="stream-descr__info">
+                <p class="stream-descr__author">potatapixel</p>
+                <p class="stream-descr__followers">Followers: <span class="stream-descr__followers-counter">1.5k</span>
+                </p>
+                <p class="stream-descr__title">The date of the last broadcast 8 hours ago
+                </p>
+
+              </div>
+            </div>
+            <div class="stream-actions">
+              <div class="stream-actions__row">
+
+                <button class="stream-actions__btn button button--transparent" type="button">
+                  <img class="button__image" src="./img/svg/follow.svg" alt="">
+                  <span class="button__text">Follow</span>
+                </button>
+
+                <button class="stream-actions__btn button" type="button">
+                  <img class="button__image" src="./img/svg/star-subscr.svg" alt="star">
+                  <span class="button__text">Subscribe</span>
+                </button>
+              </div>
+              <div class="stream-actions__row">
+                <button class="stream-actions__button">
+                  <img class="stream-actions__icon" src="./img/svg/share.svg" alt="share">
+                </button>
+                <button class="stream-actions__button">
+                  <img class="stream-actions__icon" src="./img/svg/info.svg" alt="info">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="tabs" data-tabs="tab">
+        <ul class="tabs__nav tabs__nav--sticky">
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Main page</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Information</button></li>
+          <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Posts</button></li>
+        </ul>
+        <div class="tabs__content">
+          <!-- Main page -->
+          <div class="tabs__panel">
+            <h2 class="stream-list__title">The latest broadcasts</h2>
+            <div class="stream-list">
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/01.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/01.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">KICK ME 100 TIMES!!! </h3>
+                      <p class="stream-card__subtitle">100 kicks challenge</p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">English</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/02.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/02.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/02.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Vestibulum varius quam velit </h3>
+                      <p class="stream-card__subtitle">100 kicks challenge</p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">Spanish</span>
+                        <span class="tags__item">Challenges</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/03.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/03.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/03.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Pellentesque risus eu ut consequat</h3>
+                      <p class="stream-card__subtitle">100 kicks challenge
+                      </p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">Ukrainian</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/04.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/04.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/04.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Nunc in ornare felis et sit</h3>
+                      <p class="stream-card__subtitle">100 kicks challenge </p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">English</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/05.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/05.png" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Eu tortor et bibendum aliquam sfsdfsdftert</h3>
+                      <p class="stream-card__subtitle">100 kicks challenge</p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">Spanish</span>
+                        <span class="tags__item">Challenges</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/01.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/01.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/01.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">KICK ME 100 TIMES!!! </h3>
+                      <p class="stream-card__subtitle">100 kicks challenge</p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">English</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/02.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/02.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/02.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Vestibulum varius quam velit </h3>
+                      <p class="stream-card__subtitle">100 kicks challenge</p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">Spanish</span>
+                        <span class="tags__item">Challenges</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#" class="stream-list__item">
+                <article class="stream-card">
+                  <div class="stream-card__thumbnail">
+                    <div class="stream-card__preview">
+                      <picture>
+                        <source srcset="./img/preview/03.webp" type="image/webp">
+                        <img loading="lazy" src="./img/preview/03.jpg" width="" height="" alt="Stream preview">
+                      </picture>
+                    </div>
+                    <span class="stream-card__viewers">3.8k viewers</span>
+                  </div>
+                  <div class="stream-card__info">
+                    <img class="stream-card__info-image" src="./img/streams/03.png" alt="Stream ava">
+                    <div class="stream-card__info-descr">
+                      <h3 class="stream-card__title">Pellentesque risus eu ut consequat</h3>
+                      <p class="stream-card__subtitle">100 kicks challenge
+                      </p>
+                      <p class="stream-card__author">potatopixel</p>
+                      <div class="tags">
+                        <span class="tags__item">Ukrainian</span>
+                        <span class="tags__item">Just Chatting</span>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+
+          <!-- Information -->
+          <div class="tabs__panel">
+            <div class="user-info">
+              <div class="user-info__row">
+                <div class="user-info__label">User information</div>
+                <div class="user-info__followers">Followers: <span class="user-info__followers-counter">1598</span>
+                </div>
+              </div>
+              <div class="user-info__row">
+                <div class="user-info__label">Activity</div>
+                <div class="user-info__description">Ut elementum elementum morbi ac rhoncus porttitor est.
+                  Lacinia
+                  vitae
+                  lectus morbi mauris. A eu lacus tortor fames mauris id nisi tincidunt mattis.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Posts -->
+          <div class="tabs__panel">
+            <div class="posts">
+              <div class="posts__header">
+                <h2 class="posts__title">Recent Posts</h2>
+              </div>
+              <div class="posts__items">
+                <a href="#" class="posts__item">
+                  <article class="post-card">
+                    <div class="post-card__header">
+                      <div class="post-card__author">
+                        <img class="post-card__author-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                        <div class="post-card__author-name">
+                          <span class="post-card__author-nickname">potatapixel</span>
+                          <span class="post-card__author-username">@potatapixel</span>
+                        </div>
+                      </div>
+                      <div class="post-card__date">Apr 29</div>
+                      <p class="post-card__descr">Egestas est placerat vestibulum euismod lobortis dictum augue
+                        varius
+                        quam.</p>
+                    </div>
+                    <div class="post-card__body lock">
+                      <div class="post-card__picture">
+                        <picture>
+                          <source srcset="./img/posts/01.webp" type="image/webp">
+                          <img class="post-card__img" loading="lazy" src="./img/posts/01.png" width="" height=""
+                            alt="post preview">
+                        </picture>
+                      </div>
+                      <div class="post-card__lock">
+                        <img class="post-card__lock-icon" src="./img/svg/lock.svg" alt="lock">
+                        <button class="post-card__lock-button button" type="button">
+                          <img class="button__image" src="./img/svg/star-subscr.svg" alt="star">
+                          <span class="button__text">Subscribe to see users posts</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+                <a href="#" class="posts__item">
+                  <article class="post-card">
+                    <div class="post-card__header">
+                      <div class="post-card__author">
+                        <img class="post-card__author-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                        <div class="post-card__author-name">
+                          <span class="post-card__author-nickname">potatapixel</span>
+                          <span class="post-card__author-username">@potatapixel</span>
+                        </div>
+                      </div>
+                      <div class="post-card__date">Apr 29</div>
+                      <p class="post-card__descr">Egestas est placerat vestibulum euismod lobortis
+                        dictum augue varius
+                        quam.</p>
+                    </div>
+                    <div class="post-card__body lock">
+                      <div class="post-card__picture">
+                        <picture>
+                          <source srcset="./img/posts/01.webp" type="image/webp">
+                          <img class="post-card__img" loading="lazy" src="./img/posts/01.png" width="" height=""
+                            alt="post preview">
+                        </picture>
+                      </div>
+                      <div class="post-card__lock">
+                        <img class="post-card__lock-icon" src="./img/svg/lock.svg" alt="lock">
+                        <button class="post-card__lock-button button" type="button">
+                          <img class="button__image" src="./img/svg/star-subscr.svg" alt="star">
+                          <span class="button__text">Subscribe to see users posts</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+                <a href="#" class="posts__item">
+                  <article class="post-card">
+                    <div class="post-card__header">
+                      <div class="post-card__author">
+                        <img class="post-card__author-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                        <div class="post-card__author-name">
+                          <span class="post-card__author-nickname">potatapixel</span>
+                          <span class="post-card__author-username">@potatapixel</span>
+                        </div>
+                      </div>
+                      <div class="post-card__date">Apr 29</div>
+                      <p class="post-card__descr">Egestas est placerat vestibulum euismod lobortis dictum augue
+                        varius
+                        quam.</p>
+                    </div>
+                    <div class="post-card__body lock">
+                      <div class="post-card__picture">
+                        <picture>
+                          <source srcset="./img/posts/01.webp" type="image/webp">
+                          <img class="post-card__img" loading="lazy" src="./img/posts/01.png" width="" height=""
+                            alt="post preview">
+                        </picture>
+                      </div>
+                      <div class="post-card__lock">
+                        <img class="post-card__lock-icon" src="./img/svg/lock.svg" alt="lock">
+                        <button class="post-card__lock-button button" type="button">
+                          <img class="button__image" src="./img/svg/star-subscr.svg" alt="star">
+                          <span class="button__text">Subscribe to see users posts</span>
+                        </button>
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

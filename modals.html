@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Модальные окна</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class="container-modal">
+    <div class="buttons">
+      <button class="button" data-path="login" data-animation="fadeInUp">LOGIN</button>
+      <button class="button" data-path="signup" data-animation="fadeInUp">Sign Up</button>
+      <button class="button" data-path="buy-tokens" data-animation="fadeInUp">Buy Tokens</button>
+      <button class="button" data-path="new-stream" data-animation="fadeInUp">New Stream</button>
+      <button class="button" data-path="buy_subscribe" data-animation="fadeInUp">Buy Subscribe</button>
+      <button class="button" data-path="edit-avatar" data-animation="fadeInUp">Edit Avatar</button>
+      <button class="button" data-path="edit-banner" data-animation="fadeInUp">Edit Banner</button>
+      <button class="button" data-path="edit-banner-off" data-animation="fadeInUp">Edit Banner Offline</button>
+      <!-- <button class="button" data-path="buy_subscribe" data-animation="fadeInUp">Buy Subscribe</button> -->
+
+    </div>
+    <div class="modal">
+      <!-- login -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="login">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="auth">
+          <img class="auth__logo" src="./img/logo-modal.svg" alt="logo">
+          <div class="auth__tabs tabs" data-tabs="tab2">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Sign Up</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn tabs__nav-btn--active"
+                  type="button">Login</button></li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel">
+                <form action="" class="auth__form form">
+                  <div class="form__items">
+                    <div class="form__item">
+                      <label class="form__label">Email</label>
+                      <div class="input">
+                        <input class="input__control" type="email" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Birthday Date</label>
+                      <div class="input dropdown-item">
+                        <input class="input__control " type="text" name="" value="25.04.2025" placeholder="" readonly>
+                        <button class="input__btn dropdown-btn">
+                          <img src="./img/svg/calendar.svg" alt="calendar" class="input__btn-calendar">
+                        </button>
+                        <div class="dropdown-account dropdown">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Nickname</label>
+                      <div class="input">
+                        <input class="input__control" type="text" name="" value="John">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Password</label>
+                      <div class="input">
+                        <input class="input__control" type="password" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="checkbox">
+                        <input id="rememberPassword" type="checkbox" name="agreement" class="checkbox__input">
+                        <label for="rememberPassword" class="checkbox__label">
+                          <p class="checkbox__label-text">I accept <a href="#" class="checkbox__label-link">privacy
+                              policy</a>
+                            and
+                            <a href="#" class="checkbox__label-link"> user agreement</a>
+                          </p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="form__button button">Sign Up</button>
+                </form>
+                <div class="auth__continue">
+                  <span class="auth__continue-text">or continue with</span>
+                  <ul class="auth__continue-items">
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/google.svg" alt="google">
+                      </a>
+                    </li>
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/apple.svg" alt="apple">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabs__panel">
+                <form action="" class="auth__form form">
+                  <div class="form__items">
+                    <div class="form__item">
+                      <label class="form__label">Email or nickname</label>
+                      <div class="input">
+                        <input class="input__control" type="text" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Password</label>
+                      <div class="input">
+                        <input class="input__control" type="password" name="" value="john_johnson@gmail.com">
+                      </div>
+                      <a href="#" class="form__link-bottom">Forgot password?</a>
+                    </div>
+                  </div>
+                  <button type="button" class="form__button button">Login</button>
+                </form>
+                <div class="auth__continue">
+                  <span class="auth__continue-text">or continue with</span>
+                  <ul class="auth__continue-items">
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/google.svg" alt="google">
+                      </a>
+                    </li>
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/apple.svg" alt="apple">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- signup -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="signup">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="auth">
+          <img class="auth__logo" src="./img/logo-modal.svg" alt="logo">
+          <div class="auth__tabs tabs" data-tabs="tab">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Sign Up</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn tabs__nav-btn--active"
+                  type="button">Login</button></li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel">
+                <form action="" class="auth__form form">
+                  <div class="form__items">
+                    <div class="form__item">
+                      <label class="form__label">Email</label>
+                      <div class="input">
+                        <input class="input__control" type="email" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Birthday Date</label>
+                      <div class="input dropdown-item">
+                        <input class="input__control " type="text" name="" value="25.04.2025" placeholder="" readonly>
+                        <button class="input__btn dropdown-btn">
+                          <img src="./img/svg/calendar.svg" alt="calendar" class="input__btn-calendar">
+                        </button>
+                        <div class="dropdown-account dropdown">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Nickname</label>
+                      <div class="input">
+                        <input class="input__control" type="text" name="" value="John">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Password</label>
+                      <div class="input">
+                        <input class="input__control" type="password" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="checkbox">
+                        <input id="rememberPassword" type="checkbox" name="agreement" class="checkbox__input">
+                        <label for="rememberPassword" class="checkbox__label">
+                          <p class="checkbox__label-text">I accept <a href="#" class="checkbox__label-link">privacy
+                              policy</a>
+                            and
+                            <a href="#" class="checkbox__label-link"> user agreement</a>
+                          </p>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="form__button button">Sign Up</button>
+                </form>
+                <div class="auth__continue">
+                  <span class="auth__continue-text">or continue with</span>
+                  <ul class="auth__continue-items">
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/google.svg" alt="google">
+                      </a>
+                    </li>
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/apple.svg" alt="apple">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabs__panel">
+                <form action="" class="auth__form form">
+                  <div class="form__items">
+                    <div class="form__item">
+                      <label class="form__label">Email or nickname</label>
+                      <div class="input">
+                        <input class="input__control" type="text" name="" value="john_johnson@gmail.com">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <label class="form__label">Password</label>
+                      <div class="input">
+                        <input class="input__control" type="password" name="" value="john_johnson@gmail.com">
+                      </div>
+                      <a href="#" class="form__link-bottom">Forgot password?</a>
+                    </div>
+                  </div>
+                  <button type="button" class="form__button button">Login</button>
+                </form>
+                <div class="auth__continue">
+                  <span class="auth__continue-text">or continue with</span>
+                  <ul class="auth__continue-items">
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/google.svg" alt="google">
+                      </a>
+                    </li>
+                    <li class="auth__continue-item">
+                      <a href="#" class="auth__continue-link">
+                        <img src="./img/svg/apple.svg" alt="apple">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Buy Tokens -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="buy-tokens">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="buy-tokens">
+          <div class="modal__header">
+            <h2 class="modal__title"><span>Buy Tokens</span></h2>
+          </div>
+          <div class="buy-tokens__notif">
+            <p class="buy-tokens__notif-text">Your bonus +10 tokens for your first purchase!</p>
+          </div>
+          <form action="" class="buy-tokens__form form">
+            <div class="form__items">
+              <div class="form__item">
+                <label class="form__label">Choose a cryptocurrency</label>
+                <div class="input input-select">
+                  <img class="input__icon" src="./img/token/tether.svg" alt="">
+                  <input class="input__control input__control--select dropdown-input" type="text" name="" value="USDT"
+                    readonly>
+                  <button class="input__btn dropdown-button">
+                    <img src="./img/svg/arrow.svg" alt="arrow" class="input__btn-arrow">
+                  </button>
+                  <ul class="dropdown-select">
+                    <li class="dropdown-select__item">
+                      <img class="dropdown-select__icon" src="./img/token/bnb.svg" alt="">
+                      <span>BNB</span>
+                    </li>
+                    <li class="dropdown-select__item">
+                      <img class="dropdown-select__icon" src="./img/token/btc.svg" alt="">
+                      <span>Bitcoin</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label">Enter your email address</label>
+                <div class="input">
+                  <input class="input__control" type="text" name="" value="john_johnson@gmail.com">
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label">Enter the amount</label>
+                <div class="input">
+                  <input class="input__control" type="text" name="" value="0.00041 BTC">
+                  <span class="input__text">~$30</span>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="form__button button">Buy Tokens</button>
+          </form>
+          <div class="modal__info">
+            <p class="modal__info-text">This site is managed & operated by</p>
+            <p class="modal__info-text"><a href="#" class="modal__info-link">Need help?</a> Our technical
+              support will be
+              happy to answer all your
+              questions!</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- New Stream -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="new-stream">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="new-stream">
+          <div class="modal__header">
+            <h2 class="modal__title"><span>New Stream</span></h2>
+          </div>
+          <form action="" class="new-stream__form form">
+            <div class="form__items">
+              <div class="form__item">
+                <label class="form__label">Stream Title</label>
+                <div class="input">
+                  <input class="input__control" type="text" name="" value="Title #1">
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label">Category</label>
+                <div class="input input-select">
+                  <input class="input__control dropdown-input" type="text" name="" value="Challenges" readonly>
+                  <button class="input__btn dropdown-button"><img src="./img/svg/arrow.svg" alt="arrow"
+                      class="input__btn-arrow"></button>
+                  <ul class="dropdown-select">
+                    <li class="dropdown-select__item">
+                      <span>Challenges2</span>
+                    </li>
+                    <li class="dropdown-select__item">
+                      <span>Challenges3</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="form__item">
+                <label class="form__label">Description</label>
+                <div class="input">
+                  <textarea class="input__control input__control--textarea" placeholder="Enter text" name=""
+                    id=""></textarea>
+                </div>
+              </div>
+
+            </div>
+            <button type="button" class="form__button button">Save</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- buy_subscribe -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="buy_subscribe">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="buy-subscribe">
+          <div class="buy-subscribe__author">
+            <img class="buy-subscribe__author-ava" src="./img/avatar/ava_06.png" alt="avatar">
+            <div class="buy-subscribe__author-name">
+              <span class="buy-subscribe__author-nickname">potatapixel</span>
+              <span class="buy-subscribe__author-username">@potatapixel</span>
+            </div>
+          </div>
+          <div class="modal__header">
+            <h2 class="modal__title">Subscribe and get this <span>Benefits</span></h2>
+          </div>
+          <ul class="buy-subscribe__list">
+            <li class="buy-subscribe__item">Full access to this users’s content</li>
+            <li class="buy-subscribe__item">Direct message with this user</li>
+            <li class="buy-subscribe__item">Cancel your subscribtion at any time</li>
+          </ul>
+          <button class="buy-subscribe__btn button" type="button"><span class="buy-subscribe__btn-text">Buy
+              Subscribtion</span><span class="buy-subscribe__btn-amount">100</span> TKZ</button>
+          <div class="buy-subscribe__info">
+            <div class="modal__info">
+              <p class="modal__info-text">This site is managed & operated by</p>
+              <p class="modal__info-text"><a href="#" class="modal__info-link">Need help?</a> Our technical
+                support will be
+                happy to answer all your
+                questions!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edit Avatar -->
+      <div class="modal__container" role="dialog" aria-modal="true" data-target="edit-avatar">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+
+        <h2 class="modal__title">Choose your avatar</h2>
+        <div class="upload file">
+          <div class="upload__avatar-image file-preview">
+            <img src="./img/ava.svg" alt="ava">
+          </div>
+          <div class="upload__item file__item">
+            <input accept=".jpg, .png" type="file" name="" class="file__input file-input">
+            <button class="upload__btn button button--file">Upload from PC</button>
+          </div>
+          <p class="upload__info">The image must be in JPEG or PNG format. Size -
+            128x128px-3000x3000px
+            pixels,
+            capacity - maximum 4MB.</p>
+          <p class="upload__text">or choose one of the avatars we offer</p>
+          <ul class="upload__avatar-items">
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/01.png" alt="ava">
+            </li>
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/02.png" alt="ava">
+            </li>
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/03.png" alt="ava">
+            </li>
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/04.png" alt="ava">
+            </li>
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/05.png" alt="ava">
+            </li>
+            <li class="upload__avatar-item">
+              <img class="upload__avatar-img" src="./img/avatar/06.png" alt="ava">
+            </li>
+          </ul>
+          <div class="upload__actions">
+            <button class="upload__button button button--transparent" type="button">Cancel</button>
+            <button class="upload__button button" type="button">Accept</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edit Banner -->
+      <div class="modal__container modal__container--banner" role="dialog" aria-modal="true" data-target="edit-banner">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Choose your online banner</h2>
+        <div class="upload file">
+          <div class="upload__banner-image file-preview">
+            <div class="upload__banner-prev">
+              Banner Preview
+            </div>
+          </div>
+          <div class="upload__item file__item">
+            <input accept=".jpg, .png" type="file" name="" class="file__input file-input">
+            <button class="upload__btn button button--file">Upload from PC</button>
+          </div>
+          <p class="upload__info">Minimum image aspect ratio is 1200x134px pixels, size is less
+            than 4MB.</p>
+          <p class="upload__text">or choose one of our online banners</p>
+          <ul class="upload__banner-items">
+            <li class="upload__banner-item">
+              <picture>
+                <source srcset="./img/banner/banner_01.webp" type="image/webp">
+                <img loading="lazy" src="./img/banner/banner_01.png" class="upload__banner-img" width="" height=""
+                  alt="banner">
+              </picture>
+            </li>
+            <li class="upload__banner-item">
+              <picture>
+                <source srcset="./img/banner/banner_02.webp" type="image/webp">
+                <img loading="lazy" src="./img/banner/banner_02.png" class="upload__banner-img" width="" height=""
+                  alt="banner">
+              </picture>
+            </li>
+            <li class="upload__banner-item">
+              <picture>
+                <source srcset="./img/banner/banner_03.webp" type="image/webp">
+                <img loading="lazy" src="./img/banner/banner_03.png" class="upload__banner-img" width="" height=""
+                  alt="banner">
+              </picture>
+            </li>
+            <li class="upload__banner-item">
+              <picture>
+                <source srcset="./img/banner/banner_04.webp" type="image/webp">
+                <img loading="lazy" src="./img/banner/banner_04.png" class="upload__banner-img" width="" height=""
+                  alt="banner">
+              </picture>
+            </li>
+          </ul>
+          <div class="upload__actions">
+            <button class="upload__button button button--transparent" type="button">Cancel</button>
+            <button class="upload__button button" type="button">Accept</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edit Banner off -->
+      <div class="modal__container modal__container--banner" role="dialog" aria-modal="true"
+        data-target="edit-banner-off">
+        <button type="button" class=" modal__close js-modal-close" aria-label="close modal">
+          <svg class="modal__close-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Choose your offline banner</h2>
+        <div class="upload file">
+          <div class="upload__banner-image upload__banner-image--off file-preview">
+            <div class="upload__banner-prev">
+              Banner Preview
+            </div>
+          </div>
+          <div class="upload__item file__item">
+            <input accept=".jpg, .png" type="file" name="" class="file__input file-input">
+            <button class="upload__btn button button--file">Upload from PC</button>
+          </div>
+          <p class="upload__info upload__info--banner">The image must be 1080p resolution (aspect ratio 16:9) in JPEG or
+            PNG format and less than 4MB in size.</p>
+          <div class="upload__actions">
+            <button class="upload__button button button--transparent" type="button">Cancel</button>
+            <button class="upload__button button" type="button">Accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .button {
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  .container-modal {
+    padding: 50px;
+  }
+
+</style>
+
+</html>

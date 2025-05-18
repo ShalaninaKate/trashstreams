@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Subscription</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+
+<body>
+        <header class="header">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt="logo"></a>
+        <div class="header__search">
+          <input class="header__search-input" type="search" placeholder="Search">
+          <button class="header__search-btn" type="button">
+            <svg class="header__search-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__actions ">
+          <button class="header__btn-start button" type="button">
+            <svg class="button__icon">
+              <use xlink:href="img/sprite.svg#start-stream"></use>
+            </svg>
+            <span class="button__text">Start Stream</span>
+          </button>
+          <a href="#" class="header__messages messages">
+            <svg class="messages__icon">
+              <use xlink:href="img/sprite.svg#mes"></use>
+            </svg>
+            <!-- <span class="messages__count">1</span> -->
+          </a>
+          <a href="#" class="header__notification notification">
+            <svg class="notification__icon">
+              <use xlink:href="img/sprite.svg#notification"></use>
+            </svg>
+            <!-- <span class="notification__count">1</span> -->
+          </a>
+          <div class="header__tokens tokens">
+            <svg class="tokens__icon">
+              <use xlink:href="img/sprite.svg#coins"></use>
+            </svg>
+            <span class="tokens__count">500</span>
+          </div>
+          <div class="header__profile profile dropdown-item">
+            <button class="profile__btn dropdown-btn" type="button">
+              <img class="profile__ava" src="./img/ava.svg" alt="ava">
+            </button>
+            <div class="profile__dropdown dropdown-account dropdown">
+              <div class="dropdown-account__header">
+                <img class="dropdown-account__ava" src="./img/ava.svg" alt="ava">
+                <span class="dropdown-account__name">johnjohnson</span>
+              </div>
+              <ul class="dropdown-account__items">
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/channel.svg" alt="">
+                    <span class="dropdown-account__text">Channel</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/dashboard.svg" alt="">
+                    <span class="dropdown-account__text">Creator Dashboard</span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/star.svg" alt="">
+                    <span class="dropdown-account__text">Subscribtions </span>
+                  </a>
+                </li>
+                <li class="dropdown-account__item">
+                  <a href="#" class="dropdown-account__link">
+                    <img class="dropdown-account__icon" src="./img/svg/settings.svg" alt="">
+                    <span class="dropdown-account__text">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+              <a href="#" class="dropdown-account__link">
+                <img class="dropdown-account__icon" src="./img/svg/out.svg" alt="">
+                <span class="dropdown-account__text">Logout</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  <sidebar class="side">
+  <aside class="sidebar simplebar">
+
+    <nav class="sidebar__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#home"></use>
+            </svg>
+            <p class="nav__link-text">Main Page</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#nav"></use>
+            </svg>
+            <p class="nav__link-text">Navigation</p>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#heart"></use>
+            </svg>
+            <p class="nav__link-text">Following</p>
+          </a>
+        </li>
+      </ul>
+      <button class="sidebar__btn-start button" type="button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#start-stream"></use>
+        </svg>
+        <span class="button__text">Start Stream</span>
+      </button>
+    </nav>
+    <div class="sidebar__recommend recommend ">
+      <h3 class="recommend__title">TOP Streams</h3>
+      <ul class="recommend__list">
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/02.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Samuel_White16</span>
+              <span class="recommend__descr">Fire hand challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>135</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/03.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Jeannie_Dare18</span>
+              <span class="recommend__descr">drink 72 hours challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>12</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/04.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">Ramon_Rodriguez64</span>
+              <span class="recommend__descr">sit still challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>68</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+        <li class="recommend__item">
+          <a class="recommend__link" href="#">
+            <img class="recommend__image" src="./img/streams/01.png" alt="">
+            <div class="recommend__info">
+              <span class="recommend__name">potatapixel</span>
+              <span class="recommend__descr">100 kicks challenge</span>
+            </div>
+            <div class="recommend__counter">
+              <span>598</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="recommend__bottom">
+        <button class="recommend__button" type="button">show more</button>
+      </div>
+    </div>
+  </aside>
+</sidebar>
+
+
+
+  <main class="main">
+    <div class="main__container">
+      <div class="subscribtion">
+        <h1 class="subscribtion__title">Transactions</h1>
+        <div class="subscribtion__transactions">
+
+          <div class="tabs" data-tabs="tab">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Subscribtions</button></li>
+              <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Transactions History</button>
+              </li>
+            </ul>
+            <div class="tabs__content">
+
+              <!-- Subscribtions -->
+              <div class="tabs__panel">
+                <div class="subscribtion__table table">
+                  <div class="table__filters">
+                    <div class="filters">
+                      <div class="filters__tabs">
+                        <button class="filters__tab active" type="button">Active <span>Subscriptions</span>
+                          <div class="filters__tab-amount">(11)</div>
+                        </button>
+                        <button class="filters__tab" type="button">Expired <span>Subscriptions</span>
+                          <div class="filters__tab-amount">(7)</div>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="filters">
+                      <span class="filters__title">Sort by</span>
+                      <div class="filters__items">
+                        <div class="filters__item dropdown-item">
+                          <button class="filters__btn dropdown-btn" type="button">
+                            <span class="filters__text">Newest</span>
+                            <svg class="filters__arrow">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table__body">
+                    <div class="table__row">
+                      <ul class="subscribtion__table-items table__items table__items--title">
+                        <li class="table__item">Channel Name</li>
+                        <li class="table__item">Subscribe Price</li>
+                        <li class="table__item">Expired Date</li>
+                        <li class="table__item">Action</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="subscribtion__table-items table__items ">
+                        <li class="table__item table__item--user">
+                          <div class="table__user">
+                            <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                            <div class="table__user-name">
+                              <span class="table__user-nickname">potatapixelerktjweriut</span>
+                              <span class="table__user-username">@potatapixel</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="table__item">50 TKZ</li>
+                        <li class="table__item">25.05.2025</li>
+                        <li class="table__item table__item--btn">
+                          <button class="table__item-btn button" type="button">Cancel Subscription</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="subscribtion__table-items table__items ">
+                        <li class="table__item table__item--user">
+                          <div class="table__user">
+                            <img class="table__user-ava" src="./img/avatar/ava_06.png" alt="avatar">
+                            <div class="table__user-name">
+                              <span class="table__user-nickname">potatapixel</span>
+                              <span class="table__user-username">@potatapixel</span>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="table__item">50 TKZ</li>
+                        <li class="table__item">25.05.2025</li>
+                        <li class="table__item table__item--btn">
+                          <button class="table__item-btn button" type="button">Cancel Subscription</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Ttransactions History -->
+              <div class="tabs__panel">
+                <div class="subscribtion__table table">
+                  <div class="table__filters">
+                    <div class="filters">
+                      <span class="filters__title">Sort by</span>
+                      <div class="filters__items">
+                        <div class="filters__item dropdown-item">
+                          <button class="filters__btn dropdown-btn" type="button">
+                            <span class="filters__text">Newest</span>
+                            <svg class="filters__arrow">
+                              <use xlink:href="img/sprite.svg#arrow"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="table__body">
+                    <div class="table__row">
+                      <ul class="transactions__table-items table__items table__items--title">
+                        <li class="table__item">#</li>
+                        <li class="table__item">Address</li>
+                        <li class="table__item">Date</li>
+                        <li class="table__item">Amount</li>
+                        <li class="table__item">Status</li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions__table-items table__items">
+                        <li class="table__item"><span>123</span></li>
+                        <li class="table__item"><span>0x56as4da54fas4fasfa32sf</span></li>
+                        <li class="table__item">Jan 30, 2024</li>
+                        <li class="table__item">
+                          <div class="table__item-amount">150 TKZ</div>
+                        </li>
+                        <li class="table__item table__item--btn">
+                          <button class="table__item-status table__item-status--completed button"
+                            type="button">Completed</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions__table-items table__items">
+                        <li class="table__item"><span>123</span></li>
+                        <li class="table__item"><span>0x56as4da54fas4fasfa32sf</span></li>
+                        <li class="table__item">Jan 30, 2024</li>
+                        <li class="table__item">
+                          <div class="table__item-amount">150 TKZ</div>
+                        </li>
+                        <li class="table__item table__item--btn">
+                          <button class="table__item-status table__item-status--canceled button"
+                            type="button">Canceled</button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="table__row">
+                      <ul class="transactions__table-items table__items">
+                        <li class="table__item"><span>123</span></li>
+                        <li class="table__item">
+                          <span>0x56as4da54fas4fasfa32sf</span></li>
+                        <li class="table__item">Jan 30, 2024</li>
+                        <li class="table__item">
+                          <div class="table__item-amount">150 TKZ</div>
+                        </li>
+                        <li class="table__item table__item--btn">
+                          <button class="table__item-status table__item-status--processed button"
+                            type="button">Processed</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
